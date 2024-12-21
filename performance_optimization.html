@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>像雪一样的房子 · 性能优化</title>
+    <link rel="stylesheet" href="./css/performance_optimization.css">
+    <link rel="stylesheet" href="./css/nav.css">
+    
+    <link rel="stylesheet" href="./css/all.css">
+    <style>
+        body .shell-main-nav ul .nav-box {
+            left: 120px;
+        }
+
+        body .shell-main {
+            margin-bottom: 0;
+        }
+        body .shell-main-nav{
+            margin-bottom: 0;
+        }
+        
+    </style>
+</head>
+
+<body>
+    
+
+    <div class="shell">
+        <div class="shell-main">
+            <div class="shell-main-nav">
+                <div class="logo">
+                    <img src="./image/logo.jpg" alt="">
+                    <span>像雪一样的房子</span>
+                </div>
+                <ul>
+                    <li>
+                        <a href="./index.html"><span>课程背景</span></a>
+                        <ul ><li><a href="./index.html#project_introduction">课程介绍</a></li></ul>
+                        <ul ><li><a href="./index.html#design_concept">设计概念</a></li></ul>
+                        <ul ><li><a href="./index.html#team_member">团队成员</a></li></ul>
+                    </li> 
+                    
+                    <li>
+                        <a href="./Template.html"><span>进度汇报</span></a>
+                        <ul ><li><a href="./Template.html#progress1">20241128</a></li></ul>
+                        <ul ><li><a href="./Template1205.html">20241205</a></li></ul>
+                        <ul ><li><a href="./Template1212.html">20241212</a></li></ul>
+                        <ul ><li><a href="./Template1219.html">20241219</a></li></ul>
+                        <ul ><li><a>20241226</a></li></ul>                                                
+                    </li>
+
+
+                       
+                    <li>
+                        <a href="./Template.html"><span>课程介绍</span></a>
+                        
+                        <ul ><li><a>课程特点</a></li></ul>
+                        <ul ><li><a>课程程序</a></li></ul>                                                    
+                    </li>
+
+                    <li>
+                        <a href="./make.html"><span>数据化方案设计</span></a>
+                        <ul ><li><a>背景信息</a></li></ul>
+                        <ul ><li><a>概念生成</a></li></ul>
+                        <ul ><li><a>设计优化</a></li></ul>
+                    </li>
+                    <li>
+                        <a href="./data_based_construction.html"><span>数据化建造设计</span></a>
+                        <ul ><li><a href="./automatic_generation_of_parcel_table.html">分件表自动生成</a></li></ul>
+                        <ul ><li><a href="./BIM_2D.html">BIM-2D技术图纸</a></li></ul>
+                        <ul ><li><a href="./construction_process_simulation.html">模拟建造流程</a></li></ul>
+                    </li>
+                    <li><a href="./performance_optimization.html"><span>性能优化</span></a></li>
+                    <li>
+                        <a href="./result_display.html"><span>成果展示</span></a>
+                        <ul ><li><a>效果图展示</a></li></ul>
+                        <ul ><li><a>BIM模型展示</a></li></ul>
+                        <ul ><li><a>设计优化</a></li></ul>
+                    </li>
+                    <!-- <div class="nav-box"></div> -->
+                </ul>
+            </div>
+
+
+            <br id="jiegou_xitong"><br><br>
+            <div class="back-title"  id="zhicheng_jiegou">
+                <span>气象条件</span>
+            </div>
+            <div class="ping_mian2">                
+                <img src="./image/1219report/前期气象1.png" alt=""width="1280" height="1080">
+            </div>
+
+
+            <br><br><br><br>
+            <div class="back-title"  id="zhicheng_jiegou">
+                <span>光伏发电</span>
+            </div>   
+
+
+            <div class="banner" id="progress1">
+            <!-- 轮播demo -->
+            <br><br><br><br><br><br>
+            <div class="slidershow1">
+                <div class="slides">
+                    <input type="radio" name="r" id="r1" checked>
+                    <input type="radio" name="r" id="r2">
+                    <input type="radio" name="r" id="r3">
+                    <input type="radio" name="r" id="r4">
+                    <input type="radio" name="r" id="r5">
+                    <input type="radio" name="r" id="r6">
+
+                    <div class="slide s1">
+                        <img src="./image/1219report/发电量1.png" alt="">
+                    </div>
+
+                    <div class="slide">
+                        <img src="./image/1219report/发电量2.png" alt="">
+                    </div>
+
+                    <div class="slide">
+                        <img src="./image/1219report/发电量3.png" alt="">
+                    </div>
+
+                    <div class="slide">
+                        <img src="./image/1219report/发电量4.png" alt="">
+                    </div>
+
+                    <div class="slide">
+                        <img src="./image/1219report/发电量5.png" alt="">
+                    </div>
+
+                </div>
+
+                <div class="navigation1">
+                    <label for="r1" class="bar"></label>
+                    <label for="r2" class="bar"></label>
+                    <label for="r3" class="bar"></label>
+                    <label for="r4" class="bar"></label>
+                    <label for="r5" class="bar"></label>
+                </div>
+            </div>
+            </div>       
+
+
+ 
+
+            <!-- 侧边导航栏 样式在nav -->
+            <div class="container">
+                <!--t是自定义属性，通过var函数可调用 --> 
+                <li style="--t:0%;">
+                    <a href="#jiegou_xitong">
+                        <span>结构系统</span>
+                    </a>
+                </li>
+                <li style="--t:10%;">
+                    <a href="#zhicheng_jiegou">
+                        <span>支撑结构</span>
+                    </a>
+                </li>
+                <li style="--t:20%;">
+                    <a href="#louban_jiegou">
+                        <span>楼板结构</span>
+                    </a>
+                </li>
+                <li style="--t:30%;">
+                    <a href="#lianxiliang_jiegou">
+                        <span>连系梁</span>
+                    </a>
+                </li>
+                <li style="--t:40%;">
+                    <a href="#goujian_yunshu">
+                        <span>构件运输</span>
+                    </a>
+                </li>
+                <li style="--t:50%;">
+                    <a href="#">
+                        <span>效果展示</span>
+                    </a>
+                </li>
+                <li style="--t:60%;">
+                    <a href="#model">
+                        <span>模型查看</span>
+                    </a>
+                </li>
+                <li style="--t:70%;">
+                    <a href="#model">
+                        <span></span>
+                    </a>
+                </li>
+                <li style="--t:80%;">
+                    <a href="#">
+                        <i class="fa fa-sign-out" aria-hidden="true"></i>
+                    </a>
+                </li>
+                <li style="--t:90%;">
+                    <a href="#">
+                        <i class="fa fa-sign-out" aria-hidden="true"></i>
+                    </a>
+                </li>
+                <div class="top"></div>
+                <div class="middle"></div>
+                <div class="bottom"></div>
+            </div>
+
+            <!-- 模型   样式修改在progress report1212里-->
+            <br id="model"><br><br><br>
+            <div class="back-title">
+                <span> 模型查看 </span>                   
+            </div>
+            <div class="model" >
+                <!-- <span><br><br>模型查看<br><br></span> -->
+                <iframe title="Speckle" src="https://app.speckle.systems/projects/83c6edaa56/models/6d6a254f86#embed=%7B%22isEnabled%22%3Atrue%7D" width="1200" height="800" frameborder="0"></iframe>
+
+            </div>
+        
+
+            <div class="shell-main-footer">
+                <span>东南大学建筑学院研究生课程设计<br>
+                小组成员：陈泽昕、沈冰珏<br>
+                <a href="https://www.solarark.net/#/About">快速访问：正工作室</a>
+                </span>
+            </div>
+        
+    </div>
+
+</body>
+
+</html>

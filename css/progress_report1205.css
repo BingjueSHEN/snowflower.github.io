@@ -1,0 +1,335 @@
+body .progress-main {
+    height: auto;
+    
+}
+
+
+/* 图片左右播放 */
+
+body .banner{
+    width: 100%;
+    height: auto;
+    position: relative;
+    top: -70px;
+    justify-items: center; 
+    
+  }
+
+body .img-display{
+    font: 100 40px '微软雅黑';
+}
+
+body  .banner-box{
+    position: relative;
+    top: 10px;
+    width: 90%;
+    height: 700px;
+    background-image: url("../image/1127report/图片2.png");
+    background-size: 100%;
+    animation: banner 12s linear infinite;
+  }
+body  .banner-box:hover{
+    animation-play-state: paused;
+  }
+  @keyframes banner {
+    0%{
+        background-image: url("../image/1127report/图片2.png");
+    }
+    25%{
+        background-image: url("../image/1127report/图片3.png");
+    }
+    50%{
+        background-image: url("../image/1127report/图片4.png");
+    }
+    75%{
+        background-image: url("../image/1127report/图片5.png");
+    }
+    100%{
+        background-image: url("../image/1127report/图片6.png");
+    }
+    
+  }
+  /*滑动门*/
+body  .banner>.wrap{
+    position: relative;
+  }
+
+/* 以下管理平面图 */
+body .ping_mian{
+    top: 20px;
+    position: relative;
+    width: 100%;
+    height: 700px;
+    justify-items: center;
+
+    
+}
+body .ping_mian> span{
+    font: 100 40px '微软雅黑';
+}
+
+body .ping_mian ul{
+    position: relative;
+    left: 20px;
+    /* 上面两个是尽量保持居中的 */
+    display: flex;
+    width: 95%;
+    height: 100%;
+    justify-content: space-evenly;
+    
+}
+body .ping_mian ul li{
+    width: auto;
+    height: 100%;
+    
+}
+
+body .ping_mian ul li ul{
+    width: 100%;
+    height: 60px;
+    align-items: center;
+    justify-content: center; 
+    /* justify-content: 是字体居中用的; */
+    font: 100 20px '微软雅黑';
+    
+}
+
+
+/* 以下管理轮播1 */
+
+body .slidershow1{
+    width: 1280px;
+    height: 720px;
+    overflow: hidden;
+    justify-self: center;
+
+}
+body .slidershow1 .slides{
+    
+    display: flex;
+}
+body .slidershow1 .slides .slide{
+    transition: 0.6s;
+}
+
+#r1:checked ~ .s1{
+    margin-left: 0;
+}
+#r2:checked ~ .s1{
+    margin-left: -106%;
+}
+#r3:checked ~ .s1{
+    margin-left: -205%;
+}
+#r4:checked ~ .s1{
+    margin-left: -306%;
+}
+#r5:checked ~ .s1{
+    margin-left: -406%;
+}
+#r6:checked ~ .s1{
+    margin-left: -506%;
+}
+
+body  .navigation1{
+    position: relative;
+    
+    bottom: 30px;
+    display: flex;
+    justify-self: center;
+}
+
+body  .navigation1 .bar{
+    width: 50px;
+    height: 10px;
+    border: 2px solid rgb(88, 117, 88);
+    margin: 6px;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+body .navigation1 .bar:hover{
+    background: rgb(88, 117, 88);
+}
+
+body input[ name="r"]{
+    visibility: hidden;
+}
+
+
+
+
+/* 以下管理室内展示 */
+body .inside-display{
+    height: auto;
+    width: 100%;
+    justify-content: center;
+}
+
+body .inside-display .first{
+    height: auto;
+    justify-items: center;
+}
+
+body .inside-display .second{
+    position:relative;
+    top: 20px;
+    height: auto;
+    justify-items: center;
+}
+
+body .inside-display .second .inside-display-box{
+    /* h，w是图片的尺寸 */
+    height: 588px;
+    width: 1280px;
+    background-image: url("../image/1127report/2层1.png");
+    background-size: 100%;
+    animation: second 5s linear infinite;
+
+}
+body .inside-display .second .inside-display-box:hover{
+    animation-play-state: paused;
+}
+    @keyframes second {
+        0%{
+            background-image: url("../image/1127report/2层1.png");
+        }
+        50%{
+            background-image: url("../image/1127report/2层2.png");
+        }
+        100%{
+            background-image: url("../image/1127report/2层1.png");
+        }
+        
+    }
+
+body .inside-display .third{
+    position:relative;
+    top: 40px;
+    height: auto;
+    justify-items: center;
+}
+
+body .inside-display .third .inside-display-box{
+    /* h，w是图片的尺寸 */
+    height: 588px;
+    width: 1280px;
+    background-image: url("../image/1127report/3层1.png");
+    background-size: 100%;
+    animation: third 5s linear infinite;
+
+}
+body .inside-display .third .inside-display-box:hover{
+    animation-play-state: paused;
+}
+    @keyframes third {
+        0%{
+            background-image: url("../image/1127report/3层1.png");
+        }
+        50%{
+            background-image: url("../image/1127report/3层2.png");
+        }
+        100%{
+            background-image: url("../image/1127report/3层1.png");
+        }
+        
+    }
+
+
+body .inside-display ul {
+    font: 100 20px '微软雅黑';
+    
+}
+
+/* 以下管理优化过程 */
+body .you-hua{
+    position: relative;
+    top: 100px;
+    width: 100%;
+    justify-items: center;
+}
+
+body .you-hua>span{
+    position: relative;
+    top: 5px;
+    font: 100 40px '微软雅黑';
+}
+
+body .you-hua .you-hua1{
+    
+    justify-self: center;
+    height: 550px;
+}
+
+body .you-hua .you-hua2{
+    position: relative;
+    top: 30px;
+    justify-items: center;
+    height: 700px;
+}
+
+body .you-hua .you-hua2 ul{
+    justify-content: center;
+    text-align: center;
+    font-size: 20px;
+}
+
+body .you-hua .you-hua3{
+    width: 100%;
+    justify-items: center;
+}
+
+body .you-hua .you-hua3 ul{
+    display: flex;
+    position: relative;
+    top: 10px;
+    
+    
+}
+body .you-hua .you-hua3 ul li {
+    position: relative;
+    justify-items: center;
+
+    
+    
+}
+
+body .you-hua .you-hua3 ul li span{
+    position: relative;
+    justify-items: center;
+    font: 100 20px '微软雅黑';
+    
+    
+}
+
+body .you-hua .you-hua4{
+    position: relative;
+    top: 30px;
+    justify-items: center;
+    height: 500px;
+}
+
+body .you-hua .you-hua4 ul{
+    font: 100 20px '微软雅黑';
+}
+
+
+/* 下面是搭建设想那里 */
+body .arc-design{
+    width: 100%;
+    justify-items: center;
+}
+body .arc-design>span{
+    font: 100 40px '微软雅黑';
+}
+
+body .arc-design ul li ul{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+body .arc-design ul li ul  span{
+    
+    display:block;
+    text-align: center;
+}
